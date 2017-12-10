@@ -11,7 +11,7 @@ _Créée pour CanardPC - La grille de Maîtresse Cul._
  - **separators**: `NxN,NxN,NxN`, liste des cases à noircir (séparateurs) avec leur référence hauteur fois largeur. La liste doit être séparée par des virgules et sans utilisation de guillemets.
 
 Exemple (grille CPC 371) : 
-> grille.html?grid=11x10&separators=2x7,3x5,4x6,5x2,5x9,6x3,6x7,6x11,7x4,8x5,9x9,10x5
+> https://vankasteelj.github.io/mots-croises/grille.html?grid=11x10&separators=2x7,3x5,4x6,5x2,5x9,6x3,6x7,6x11,7x4,8x5,9x9,10x5
 
 ### License
 ```
