@@ -1,5 +1,9 @@
 # Auto-générateur de grille de mots croisés
 
+_Copié (fork) par SLT pour le fun !_
+
+README original ci-dessous.
+
 _Créée pour CanardPC - La grille de Maîtresse Cul._
 
 ### Utilisation:
