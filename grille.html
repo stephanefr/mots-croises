@@ -110,14 +110,16 @@
                     // line legend
                     if (j == 0) {
                         if (i) {
-                            document.getElementById('grid').innerHTML += `<div class="legendV">${i}</div>`;
+                            // document.getElementById('grid').innerHTML += `<div class="legendV">${i}</div>`;
+                            document.getElementById('grid').innerHTML += `<div class="legendV">${convertToRoman(i)}</div>`;
                         }
                         continue;
                     }
 
                     // column legend
                     if (i == 0) {
-                        document.getElementById('grid').innerHTML += `<div class="legendH">${convertToRoman(j)}</div>`;
+                        // document.getElementById('grid').innerHTML += `<div class="legendH">${convertToRoman(j)}</div>`;
+                        document.getElementById('grid').innerHTML += `<div class="legendH">${j}</div>`;
                         continue;
                     }
 
