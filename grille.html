@@ -61,15 +61,36 @@
             margin-left: 50px;
             margin-top: 20px;
         }
+        // Ajout du layout à 3 espaces : la grille, et à sa droite les defintions, H puis V
+        // générées avec https://grid.layoutit.com/
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 1px 1px;
+        grid-template-areas: "grille grille Horizontal ." "grille grille Vertical ." ". . . .";
+    }
+
+    .grille { grid-area: grille; }
+
+    .Horizontal { grid-area: Horizontal; }
+
+    .Vertical { grid-area: Vertical; }
 
     </style>
 </head>
 
 <body>
-    <div id="grid"></div>
+    <div class="grid-container">
+        // <div class="grille"></div>
+        <div id="grid" classe="grille"></div>
+        <div class="Horizontal"></div>
+        <div class="Vertical"></div>
+    </div>
+//    <div id="grid"></div>
     <button id="reset" onclick="reset()">Remettre à zéro</button>
     <br>
-    Version 1.0
+    Version 2.0
 
     <script>
         /**
