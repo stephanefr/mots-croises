@@ -61,45 +61,17 @@
             margin-left: 50px;
             margin-top: 20px;
         }
-        // Ajout du layout à 3 espaces : la grille, et à sa droite les defintions, H puis V
-        // générées avec https://grid.layoutit.com/
-    .grid-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        gap: 1px 1px;
-        grid-template-areas: "grille grille Horizontal ." "grille grille Vertical ." ". . . .";
-    }
-
-    .grille { grid-area: grille; }
-
-    .Horizontal { grid-area: Horizontal; }
-
-    .Vertical { grid-area: Vertical; }
 
     </style>
 </head>
 
 <body>
-    <div class="grid-container">
-        // <div class="grille"></div>
-        <div id="grid" classe="grille"></div>
-        <div class="Horizontal">
-        HORLZONTALEMENT
-L Légion donneurs . - IL En filon
-À Grand d'séminole. = Ici l'om-
-bre. Un pot de départ . IV. lront
-enrôleurs. - V. On la repère quand
-elle mène le bal On en fait encore
-tout un plat. - VL FR une reconnais
-sance de têtes - VIL À mandat lire
-        </div>
-        <div class="Vertical"></div>
-    </div>
-//    <div id="grid"></div>
+ <div id="hdefs" class="Horizontal"></div>
+ <div id="vdefs" class="Vertical"></div>
+ <div id="grid"></div>
     <button id="reset" onclick="reset()">Remettre à zéro</button>
     <br>
-    Version 2.0
+    <small>Version 2.1<small>
 
     <script>
         /**
@@ -144,7 +116,6 @@ sance de têtes - VIL À mandat lire
                     // line legend
                     if (j == 0) {
                         if (i) {
-                            // document.getElementById('grid').innerHTML += `<div class="legendV">${i}</div>`;
                             document.getElementById('grid').innerHTML += `<div class="legendV">${convertToRoman(i)}</div>`;
                         }
                         continue;
@@ -152,7 +123,6 @@ sance de têtes - VIL À mandat lire
 
                     // column legend
                     if (i == 0) {
-                        // document.getElementById('grid').innerHTML += `<div class="legendH">${convertToRoman(j)}</div>`;
                         document.getElementById('grid').innerHTML += `<div class="legendH">${j}</div>`;
                         continue;
                     }
